@@ -1,12 +1,14 @@
 const produtos = [
     { material: 'PLA', peso: 200, horas: 4 },
-    { material: 'ABS', peso: 350, horas: 6 },
+    { material: 'ABS', peso: 350, horas: 6 },   // lista de produtos
     { material: 'PETG', peso: 150, horas: 3 }
 ]
+// Função para mostrar o materia e o peso do produto 
 function mostrarDados() {
     for (let produto of produtos) {
-        console.log(produto.material)
-        console.log(produto.peso)
+        console.log(produto.material) // sekeciona o material
+        console.log(produto.peso) // seleciona o peso
     }
 }
-mostrarDados()
+mostrarDados() // mostra os itens do produto selecionado
+
