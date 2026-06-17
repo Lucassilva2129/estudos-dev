@@ -26,6 +26,6 @@ adicionarTarefas('Estudar')
 adicionarTarefas('Fazer exercício')
 adicionarTarefas('Revisar')
 
-contarTarefas()
+contarTarefas() // Conta quantas tarefas tem no total
 removeTarefas(1) // Remove a segunda tarefa
 listarTarefas() // Lista depois de removido
