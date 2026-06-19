@@ -6,7 +6,7 @@ const produtos = [
 // Função para mostrar o materia e o peso do produto 
 function mostrarDados() {
     for (let produto of produtos) {
-        console.log(produto.material) // sekeciona o material
+        console.log(produto.material) // seleciona o material
         console.log(produto.peso) // seleciona o peso
     }
 }
