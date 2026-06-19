@@ -4,7 +4,7 @@ const produtos = [
     { material: 'PETG', peso: 150, horas: 3 },
     { material: 'PLA', peso: 100, horas: 2 },
 ]
-//console.log(produtos)
+
 const todosPLA = produtos.filter((item) => item.material === 'PLA' ) // filtra e exibe todos os PLAs
  
 console.log(todosPLA)
