@@ -1,0 +1,8 @@
+const precos = [50, 100, 75, 15, 30] // Array de preços 
+
+let contarPrecos = 0 // começa a contagem em zero 
+
+for (let preco of precos) { // visita cada item da lista 
+    contarPrecos += preco   
+}
+console.log(contarPrecos) // exibe o total 
