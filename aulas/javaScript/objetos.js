@@ -3,7 +3,7 @@ const produtos = [
     { material: 'ABS', peso: 350, horas: 6 },   // lista de produtos
     { material: 'PETG', peso: 150, horas: 3 }
 ]
-// Função para mostrar o materia e o peso do produto 
+// Função para mostrar o material e o peso do produto 
 function mostrarDados() {
     for (let produto of produtos) {
         console.log(produto.material) // seleciona o material
