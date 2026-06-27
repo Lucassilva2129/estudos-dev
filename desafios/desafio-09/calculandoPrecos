@@ -1,8 +1,17 @@
 const precos = [50, 100, 75, 15, 30] // Array de preços 
 
-let contarPrecos = 0 // começa a contagem em zero 
-
-for (let preco of precos) { // visita cada item da lista 
-    contarPrecos += preco   
+function contadorDePrecos() { // cria uma função
+    let contarPrecos = 0 // começa a contagem em zero 
+    let maior = 0
+    for (let preco of precos) { // visita cada item da lista 
+        contarPrecos += preco
+        if (preco > maior) { // verifica no em cada loop se o preco é maior que o anterior
+            maior = preco // se o preço é maior, salva ele
+        }
+    }
+    return `${maior} é o MAIOR número e o total é ${contarPrecos}. `
 }
-console.log(contarPrecos) // exibe o total 
+
+console.log(contadorDePrecos()) // chama a função
+
+ 
