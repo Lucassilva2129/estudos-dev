@@ -18,7 +18,7 @@ function removeTarefas(posicao) {
 
 // Contar tarefas
 function contarTarefas() {
-    console.log(tarefas.length)
+    console.log(tarefas.length ) 
 }
 
 // Chamada - adiciona as tarefas
@@ -28,4 +28,5 @@ adicionarTarefas('Revisar')
 
 contarTarefas() // Conta quantas tarefas tem no total
 removeTarefas(1) // Remove a segunda tarefa
+contarTarefas() // Conta quantas tarefas tem depois da remoçao
 listarTarefas() // Lista depois de removido
