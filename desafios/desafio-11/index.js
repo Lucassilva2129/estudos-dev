@@ -2,7 +2,6 @@
 
 const numeros = lista.filter( numero => numero  % 2 === 0 ) // filtar os numeros divisivel por dois e resto zero ( pares ) e mostrar em uma nova lista numeros.
 
-<<<<<<< HEAD
 console.log(numeros) // Lista com o filtro ( Pares ) */
 
 const numeros = [5, 12, 3, 18, 7, 25, 1, 15]
@@ -16,12 +15,3 @@ const palavras = ['sol', 'casa', 'programador', 'dev', 'javascript', 'css']
 const grandes = palavras.filter (palavra => palavra.length > 4)
 
 console.log(grandes)
-=======
-console.log(numeros) // Lista com o filtro ( Pares )
-
-const palavras = ['sol', 'casa', 'programador', 'dev', 'javascript', 'css']
-
-const grandes = palavras.filter (palavra => palavra.length > 4) 
-
-console.log(grandes)
->>>>>>> 6a07af5269d424b95b4d07f5d18eb078f5902d2c
