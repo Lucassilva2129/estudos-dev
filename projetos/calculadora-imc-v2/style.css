@@ -1,0 +1,65 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background: linear-gradient(135deg, #759cf0, #1e3a8a);
+    display: flex;
+    /* permite centralizar  */
+    justify-content: center;
+    /* centraliza horizontalmente */
+    align-items: center;
+    /* centraliza verticalmente */
+    height: 100vh;
+    /* altura total da tela - sem isso o flex não centraliza verticalmente */
+    font-family: Arial;
+    /* fonte padão de toda a página */
+}
+
+#caixa {
+    background: white;
+    border-radius: 15px;
+    width: 750px;
+    padding: 15px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+    text-align: center;
+    /* centraliza o conteúdo */
+}
+
+input {
+    border-radius: 5px;
+    width: 100%;
+    padding: 14px;
+    margin: 5px;
+    border: 1px solid #cbd5e1;
+    font-size: 16px;
+
+}
+
+button {
+    border-radius: 5px;
+    background: #2563eb;
+    width: 100%;
+    padding: 14px;
+    margin: 5px;
+    color: aliceblue;
+    border: 1px solid #3c3c41;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+h1 {
+    color: #0f172a;
+    margin-bottom: 20px;
+}
+
+#resultado {
+    margin-top: 20px;
+    padding: 15px;
+    background: #eff6ff;
+    border-radius: 10px;
+    color: #1e3a8a;
+    font-weight: bold;
+}
