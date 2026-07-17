@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Caulculadora 3d</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <h1>Calculadora 3d</h1>
+    <p>Preencha todos os campos para ter um orçamento do valor do seu objeto 3d</p>
+
+    Selecione o tipo de material: <select id="material">
+        <option value="PLA">PLA</option>
+        <option value="ABS">ABS</option>
+        <option value="PETG">PETG</option>
+        <option value="TPU">TPU</option>
+    </select> <br>
+
+    Digite a altura (cm):
+    <input type="number" id="altura"> <br>
+    Digite a largura (cm):
+    <input type="number" id="largura"> <br>
+    Digite a profundidade (cm):
+    <input type="number" id="profundidade"> <br>
+
+    Selecione o nível de complexidade:
+    <select id="complexidade">
+        <option value="simples">Simples</option>
+        <option value="medio">Médio</option>
+        <option value="complexo">Complexo</option>
+    </select>
+
+    Selecione o nível de acabamento:
+    <select  id="acabamento">
+    <option value="natural">Natural</option>
+    <option value="colorido">Colorido</option>
+    <option value="pintado">Pintado</option>
+    </select>
+
+    <button id="botao">Calcular</button>
+    <div id="resultado">Resultado</div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>

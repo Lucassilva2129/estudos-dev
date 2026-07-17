@@ -28,4 +28,3 @@ botao.addEventListener('click', function () {
     const classificado = classific.find( item => imc < item.limite).texto
 
     resultado.innerText = `Seu IMC é ${imc.toFixed(2)}. ${classificado}`
-})
