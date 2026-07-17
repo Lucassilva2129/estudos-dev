@@ -10,7 +10,7 @@ botao.addEventListener('click', function () {
     const pesoValor = Number(peso.value)
 
     if (alturaValor === 0 || pesoValor === 0) {
-        resultado.innerText = 'Preecha todos os campos!'
+        resultado.innerText = 'Preencha todos os campos!'
         return
     }
 
