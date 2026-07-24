@@ -12,6 +12,35 @@
     <h1>Calculadora 3d</h1>
     <p>Preencha todos os campos para ter um orçamento do valor do seu objeto 3d</p>
 
+    Selecione a impressora: <select id="impressora">
+        <option value="500" selected>Bambu Lab A1 Mini (500W)</option>
+        <option value="1200">Bambu Lab A1 (1200W)</option>
+        <option value="1000">Bambu Lab P1S (1000W)</option>
+        <option value="270">Creality Ender 3 (270W)</option>
+        <option value="270">Creality Ender 3 Pro (270W)</option>
+        <option value="350">Creality CR-10 (350W)</option>
+        <option value="120">Prusa i3 MK3S (120W)</option>
+        <option value="240">Anycubic Kobra (240W)</option>
+        <option value="manual">Digitar manualmente</option>
+    </select> 
+
+    <input type="number" id="consumoManual" placeholder="Consumo em Watts">
+
+    <p>Acessórios:</p>
+    <label >
+         <input type="checkbox" id="bmcu" value="15"> BMCU (+15W)
+    </label>
+    <label>
+        <input type="checkbox" id="ams" value="30"> AMS (+30W)
+    </label>
+    <br>
+
+    Digite o tempo de impressão (horas):*
+    <input type="number" id="tempo" placeholder="Ex: 2.5"> <br>
+
+    Digite o preço do kWh (R$):*
+    <input type="number" id="kwh" placeholder="Ex: 0.75"> <br>
+
     Selecione o tipo de material: <select id="material">
         <option value="PLA">PLA</option>
         <option value="ABS">ABS</option>
@@ -19,13 +48,18 @@
         <option value="TPU">TPU</option>
     </select> <br>
 
-    Digite a altura (cm):
+    Digite o valor do material (R$):*
+    <input type="number" id="preco" placeholder="Ex: 100"><br>
+
+    Digite a altura (cm):*
     <input type="number" id="altura"> <br>
-    Digite a largura (cm):
+    Digite a largura (cm):*
     <input type="number" id="largura"> <br>
-    Digite a profundidade (cm):
+    Digite a profundidade (cm):*
     <input type="number" id="profundidade"> <br>
 
+    Digite o valor interno (infill) em %*:
+    <input type="number" id="interno" placeholder="Ex: 15">
     Selecione o nível de complexidade:
     <select id="complexidade">
         <option value="simples">Simples</option>
@@ -34,13 +68,14 @@
     </select>
 
     Selecione o nível de acabamento:
-    <select  id="acabamento">
-    <option value="natural">Natural</option>
-    <option value="colorido">Colorido</option>
-    <option value="pintado">Pintado</option>
+    <select id="acabamento">
+        <option value="natural">Natural</option>
+        <option value="colorido">Colorido</option>
+        <option value="pintado">Pintado</option>
     </select>
 
     <button id="botao">Calcular</button>
+
     <div id="resultado">Resultado</div>
 
     <script src="script.js"></script>
