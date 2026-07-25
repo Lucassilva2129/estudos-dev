@@ -15,7 +15,6 @@ const bmcu = document.querySelector('#bmcu')
 const ams = document.querySelector('#ams')
 const interno = document.querySelector('#interno')
 
-// Esconder o consumo manual
 // função para esconder o campo de consumo de watts, so aparece ao selecionar 'Digitar manualmente'.
 impressora.addEventListener('change', function () {
     if (impressora.value == 'manual') {
