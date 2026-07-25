@@ -37,6 +37,9 @@ botao.addEventListener('click', function () {
     const precoValor = preco.value
     const InternoValor = interno.value
 
+    // se escolher digitar o valor da impressora manualmente
+    const impressoraValor = impressora.value === 'manual' ? Number(consumoManual.value) : Number(impressora.value)
+
     // O ? 15 : 0 é o operador ternário — se marcado soma 15W, senão soma 0.
     const consumoBmcu = bmcu.checked ? 15 : 0
     const consumoAms = ams.checked ? 30 : 0
@@ -78,7 +81,7 @@ botao.addEventListener('click', function () {
     const volumeReal = volume * (InternoValor / 100)
     const peso = volumeReal * fatorDensidade
     const custoMaterial = (peso / 1000) * precoValor
-    const consulmoTotal = Number(impressora.value) + consumoBmcu + consumoAms
+    const consulmoTotal = impressoraValor + consumoBmcu + consumoAms
     const custoEnergia = (consulmoTotal / 1000) * tempoValor * kwhValor
     // preço final
     const precoFinal = (custoMaterial + custoEnergia) * fatorComplexidade * fatorAcabamentos
