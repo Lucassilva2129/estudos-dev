@@ -17,7 +17,7 @@ O resultado é o mesmo do seu código, mas funciona para qualquer tamanho de lis
 
 
 length é uma propriedade que te diz o tamanho do array — quantos itens ele tem.
-javascriptconst alunos = ['Lucas', 'Larissa', 'Bob']
+javascript const alunos = ['Lucas', 'Larissa', 'Bob']
 console.log(alunos.length) // 3
 No for ele serve para saber quando parar:
 javascriptfor (let i = 0; i < alunos.length; i++)
