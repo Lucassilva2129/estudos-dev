@@ -1,0 +1,30 @@
+*{
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial;
+    text-align: center;
+    background-color:#f0f0f0;
+
+}
+button {
+    background-color: rgb(139, 241, 241);
+    color: black;  /* cor do texto */
+    padding: 8px 16px;  /* aumenta um pouco o padding */
+    border-radius: 5px;
+    cursor: pointer;
+    border: none;  /* remove a borda padrão */
+}
+#produtos div {
+    background: white;  
+    padding: 10px;
+    margin: 5px;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1)
+    text-align: left;
+}
+#produtos {
+    max-width: 400px;
+    margin: 20px auto;
+}
