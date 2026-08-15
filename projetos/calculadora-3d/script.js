@@ -1,4 +1,5 @@
 const material = document.querySelector('#material')
+const gramas = document.querySelector('#gramas')
 const altura = document.querySelector('#altura')
 const largura = document.querySelector('#largura')
 const profundidade = document.querySelector('#profundidade')
@@ -14,8 +15,12 @@ const preco = document.querySelector('#preco')
 const bmcu = document.querySelector('#bmcu')
 const ams = document.querySelector('#ams')
 const interno = document.querySelector('#interno')
+const btnAvancado = document.querySelector('#btnAvancado')
+const opcoesAvancadas = document.querySelector('#opcoesAvancadas')
 
-// função para esconder o campo de consumo de watts, so aparece ao selecionar 'Digitar manualmente'.
+
+
+// função para expandir o campo de consumo de watts, so aparece ao selecionar 'Digitar manualmente'.
 impressora.addEventListener('change', function () {
     if (impressora.value == 'manual') {
         consumoManual.style.display = 'block'
@@ -24,9 +29,19 @@ impressora.addEventListener('change', function () {
     }
 })
 
+// fução para expandir compo de opções avançadas
+btnAvancado.addEventListener('click', function() {
+    if(opcoesAvancadas.style.display === 'none'){
+        opcoesAvancadas.style.display = 'block'
+    } else {
+        opcoesAvancadas.style.display = 'none'
+    }
+})
+
 // função para calcular o valor 
 botao.addEventListener('click', function () {
     const materialValor = material.value
+    const gramasValor = gramas.value
     const alturaValor = altura.value
     const larguraValor = largura.value
     const profundidadeValor = profundidade.value
@@ -45,12 +60,18 @@ botao.addEventListener('click', function () {
     const consumoAms = ams.checked ? 30 : 0
 
     // iniciar if para ver se algum objeto não foi preenchido 
-
-    if (tempoValor == '' || precoValor == '' || alturaValor == '' || larguraValor == '' || profundidadeValor == '') {
-        resultado.innerText = 'Preencha todos os campos obrigatórios *!'
-
-        return
+    if (opcoesAvancadas.style.display === 'block') {
+        if (tempoValor == '' || precoValor == '' || alturaValor == '' || larguraValor == '' || profundidadeValor == '' || InternoValor == '') {
+            resultado.innerText = 'Preencha todos os campos obrigatórios *!'
+            return
+        }
     }
+    else { 
+        if (tempoValor == '' || precoValor == '' || gramasValor == '') {
+        resultado.innerText = 'Preencha todos os campos obrigatórios *!'
+            return
+    }
+}
     // Listas
     const materiais = [
         { nome: 'PLA', densidade: 1.24 },
@@ -77,11 +98,18 @@ botao.addEventListener('click', function () {
     const fatorAcabamentos = acabamentos.find(item => item.tipo === acabamentoValor).fator
 
     // calculos
+    let custoMaterial = 0
+
+if (opcoesAvancadas.style.display === 'block') {
     const volume = alturaValor * larguraValor * profundidadeValor
     const volumeReal = volume * (InternoValor / 100)
     const peso = volumeReal * fatorDensidade
-    const custoMaterial = (peso / 1000) * precoValor
-    const consulmoTotal = impressoraValor + consumoBmcu + consumoAms
+    custoMaterial = (peso / 1000) * precoValor
+} else {
+    custoMaterial = (gramasValor / 1000) * precoValor
+}
+
+  const consulmoTotal = impressoraValor + consumoBmcu + consumoAms
     const custoEnergia = (consulmoTotal / 1000) * tempoValor * kwhValor
     // preço final
     const precoFinal = (custoMaterial + custoEnergia) * fatorComplexidade * fatorAcabamentos

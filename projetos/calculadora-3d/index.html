@@ -47,19 +47,27 @@
         <option value="PETG">PETG</option>
         <option value="TPU">TPU</option>
     </select> <br>
-
+    
     Digite o valor do material (R$):*
     <input type="number" id="preco" placeholder="Ex: 100"><br>
 
-    Digite a altura (cm):*
-    <input type="number" id="altura"> <br>
-    Digite a largura (cm):*
-    <input type="number" id="largura"> <br>
-    Digite a profundidade (cm):*
-    <input type="number" id="profundidade"> <br>
+    Digite o peso da peça(gramas)*:
+    <input type="number" id="gramas" placeholder="Ex: 45"><br>
 
-    Digite o valor interno (infill) em %*:
+    <!-- Botão para expandir as opções avançadas -->
+    <button id="btnAvancado">⚙️ Opções avançadas</button> <br>
+    <div id="opcoesAvancadas">
+    Digite a altura (cm):
+    <input type="number" id="altura"> <br>
+    Digite a largura (cm):
+    <input type="number" id="largura"> <br>
+    Digite a profundidade (cm):
+    <input type="number" id="profundidade"> <br>
+    Digite o valor interno (infill) em %:
     <input type="number" id="interno" placeholder="Ex: 15">
+    </div>
+    <!-- Fim das opçoes avançadas -->
+
     Selecione o nível de complexidade:
     <select id="complexidade">
         <option value="simples">Simples</option>
