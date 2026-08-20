@@ -1,8 +1,127 @@
-#consumoManual {
-    display: none;
-    /*esconde a compo de digitar manual que é exibido por padrão */
+* {
+    /* reset */
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
 }
+
+html {
+    /* tamanho da fonte  */
+    font-size: 62.5%;
+    /* 62.5% de 16px é 10px, assim 1rem = 10px */
+}
+
+:root {
+    /* cores do site */
+    --cor-titulo: #0ff;
+}
+
+body {
+    font-family: 'Nunito', sans-serif;
+    font-size: 1.6rem;
+    /* 1.6rem é o mesmo que 16px, equivale a 16px.*/
+    background: rgba(4, 88, 144, 0.817);
+}
+
+
+#consumoManual {
+    /*esconde a compo de digitar manual que é exibido por padrão */
+    display: none;
+}
+
 #opcoesAvancadas {
     /*esconde a compo de opções avançadas*/
     display: none;
+}
+
+h1 {
+    /* cor do titulo  */
+    color: #2563eb;
+    /* tamanho da fonte */
+    font-size: 4rem;
+    /* 4rem é o mesmo que 40px, equivale a 40px.*/
+}
+
+#container {
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 3rem;
+    background: white;
+    border-radius: 1.5rem;
+    box-shadow: 0 1rem 3rem rgba(0, 0, 0, 0.2);
+    margin-top: 4rem;
+    margin-bottom: 4rem;
+}
+
+p {
+    /* paragrafo */
+    color: #666;
+    margin-bottom: 1.5rem;
+}
+
+input,
+select {
+    /* estilizando os inputs e selects */
+    width: 100%;
+    padding: 1rem;
+    margin-bottom: 1rem;
+    border: 1px solid #cbd4;
+    font-size: 1.6rem;
+    font-family: 'Nunito', sans-serif;
+}
+
+#botao {
+    /* estilizando o botão calcular */
+    width: 100%;
+    padding: 1.4rem;
+    background: #2563eb;
+    color: white;
+    border-radius: 1.6rem;;
+    font-size: 1.6rem;
+    font-weight: bold;
+    /* espessura ou peso da fonte */
+    cursor: pointer;
+    margin-top: 1rem;
+}
+
+#botao:hover {
+    background: #1d4ed8;
+    /* muda a cor ao passar o ponteiro */
+    transition: 0.3s;
+}
+
+#btnAvancado {
+    background: transparent;
+    border: 1px solid #2563eb;
+    color: #2563eb;
+    padding: 0.8rem 1.4rem;
+    border-radius: 0.8rem;
+    cursor: pointer;
+    font-size: 1.4rem;
+    margin-bottom: 1rem;
+    transition: 0.3s;
+}
+
+#btnAvancado:hover {
+    background: #2563eb;
+    color: white;
+}
+
+#resultado {
+    margin-top: 2rem;
+    padding: 2rem;
+    background-color: #eff6ff;
+    border-radius: 1rem;
+    color: #1e3a8a;
+    font-weight: bold;
+    font-size: 1.8rem;
+    text-align:center;
+    border-left: 4px solid #2563eb;
+}
+
+input[type="checkbox"] {
+    width: auto;
+    margin-bottom: 0;
+    margin-right: 0.5rem;
+    vertical-align: middle;
 }

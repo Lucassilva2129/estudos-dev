@@ -2,7 +2,7 @@ const tarefas = []
 
 // Função 1 — ADICIONAR (você já sabe fazer!)
 function adicionarTarefas(tarefa) {
-    tarefas.push(tarefa)
+    tarefas.push(tarefa)  // /adiciona uma tarefa
 }
 
 // Função 2 — LISTAR (usa o for...of)
