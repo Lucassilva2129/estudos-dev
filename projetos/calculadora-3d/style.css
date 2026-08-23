@@ -36,7 +36,7 @@ body {
 
 h1 {
     /* cor do titulo  */
-    color: #2563eb;
+    color: #153b8f;
     /* tamanho da fonte */
     font-size: 4rem;
     /* 4rem é o mesmo que 40px, equivale a 40px.*/
@@ -68,6 +68,7 @@ select {
     border: 1px solid #cbd4;
     font-size: 1.6rem;
     font-family: 'Nunito', sans-serif;
+    border-radius: 1rem;
 }
 
 #botao {
@@ -76,7 +77,7 @@ select {
     padding: 1.4rem;
     background: #2563eb;
     color: white;
-    border-radius: 1.6rem;;
+    border-radius: 1.6rem;
     font-size: 1.6rem;
     font-weight: bold;
     /* espessura ou peso da fonte */
@@ -124,4 +125,21 @@ input[type="checkbox"] {
     margin-bottom: 0;
     margin-right: 0.5rem;
     vertical-align: middle;
+}
+/* Mobile - telas menores que 600px */
+@media (max-width: 600px) {
+
+    #container {
+        margin: 1rem;
+        padding: 2rem;
+        border-radius: 1rem;
+    }
+
+    h1 {
+        font-size: 2.8rem;
+    }
+
+    #btnAvancado {
+        width:100%;
+    }
 }
