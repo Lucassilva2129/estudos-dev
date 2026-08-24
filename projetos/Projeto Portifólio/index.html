@@ -1,0 +1,117 @@
+<!doctype html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>PORTIFÓLIO | LUCAS</title>
+  </head>
+  <body>
+
+      <!-- cria um efeito de bolhas no fundo -->
+    <div class="particulas"></div> 
+
+    <nav class="nevegacao">
+      <ul class="menu">
+        <li>
+          <a href="#inicio" class="menu-link">Início</a>
+        </li>
+
+        <li>
+          <a href="#sobre" class="menu-link">Sobre</a>
+        </li>
+
+        <li>
+          <a href="#projetos" class="menu-link">Projetos</a>
+        </li>
+
+        <li>
+          <a href="#contatos" class="menu-link">Contatos</a>
+        </li>
+      </ul>
+    </nav>
+
+    <main id="inicio" class="cabecalho">
+      <img
+        src="./img/lucas.jpg"
+        alt="Foto de Lucas T. Silva"
+        class="foto-perfil"
+      />
+
+      <h1>Lucas T. Silva</h1>
+      <p class="cabecalho-sub-titulo">Desenvolvedor Front End</p>
+    </main>
+
+    <section id="sobre" class="sobre">
+      <h2 class="sobre-titulo">Sobre Mim</h2>
+      <div class="sobre-caixa">
+        <p class="sobre-paragrafo">
+          Olá! Eu sou estudante de desenvolvimento web, transformando
+          aprendizado em projetos e evolução constante. HTML, CSS e JavaScript |
+          Construindo projetos e aprimorando minhas habilidades.
+        </p>
+      </div>
+    </section>
+
+    <section id="projetos" class="projetos">
+      <h2 class="projetos-titulo">Meus Projetos</h2>
+
+      <div class="projetos-caixa">
+        <div class="projetos-card">
+          <img
+            src="./img/projeto1.png"
+            alt="Projeto 1"
+            class="projetos-imagem"
+          />
+          <div class="caixa-textos-projeto">
+            <h3 class="info-projetos">Calculadora 3D</h3>
+            <p class="paragrafo-projetos">
+              Loja 3D moderna e interativa, com uma experiência visual imersiva
+              e navegação dinâmica.
+            </p>
+          </div>
+        </div>
+
+        <div class="projetos-card">
+          <img
+            src="./img/projeto2.jpg"
+            alt="projeto 2"
+            class="projetos-imagem"
+          />
+          <div class="caixa-textos-projeto">
+            <h3 class="info-projetos">Clinica Vida</h3>
+            <p class="paragrafo-projetos">Em construção...</p>
+        </div>
+        </div>
+
+        <div class="projetos-card">
+          <img
+            src="./img/projeto3.jpg"
+            alt="projeto 3"
+            class="projetos-imagem"
+          />
+          <div class="caixa-textos-projeto">
+            <h3 class="info-projetos">Em Andamento</h3>
+            <p class="paragrafo-projetos">Em construção...</p>
+        </div>
+      </div>
+    </section>
+
+    <section id="contatos" class="contatos">
+      <h2 class="contatos-titulo">Entre em Contato</h2>
+      <form class="formulario-contato" id="formulario">
+        <div class="grupo-form">
+          <input class="campo-form" placeholder="Nome" />
+        </div>
+
+        <div class="grupo-form">
+          <textarea
+            class="campo-form"
+            placeholder="Digite sua mensagem"
+          ></textarea>
+        </div>
+        <button type="submit" class="botao-form">Enviar WhatsApp</button>
+      </form>
+    </section>
+  </body>
+</html>
