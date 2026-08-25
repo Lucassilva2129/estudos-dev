@@ -59,7 +59,7 @@
       <div class="projetos-caixa">
         <div class="projetos-card">
           <img
-            src="./img/projeto1.png"
+            src="./img/projeto1.jpg"
             alt="Projeto 1"
             class="projetos-imagem"
           />
@@ -99,19 +99,20 @@
 
     <section id="contatos" class="contatos">
       <h2 class="contatos-titulo">Entre em Contato</h2>
-      <form class="formulario-contato" id="formulario">
+      <form class="formulario-contato" id="formulario" onsubmit="enviarWhats(event)">
         <div class="grupo-form">
-          <input class="campo-form" placeholder="Nome" />
+          <input class="campo-form" placeholder="Nome" id="nome" />
         </div>
 
         <div class="grupo-form">
           <textarea
             class="campo-form"
-            placeholder="Digite sua mensagem"
+            placeholder="Digite sua mensagem" id="mensagem" rows="6"
           ></textarea>
         </div>
         <button type="submit" class="botao-form">Enviar WhatsApp</button>
       </form>
     </section>
+    <script src="script.js"></script>
   </body>
 </html>

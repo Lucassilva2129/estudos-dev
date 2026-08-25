@@ -18,9 +18,16 @@ html {
 
 body {
     font-family: 'Nunito', sans-serif;
-    font-size: 1.6rem;
     /* 1.6rem é o mesmo que 16px, equivale a 16px.*/
-    background: rgba(4, 88, 144, 0.817);
+    font-size: 1.6rem;
+    
+    /* imagem de fundo  */
+
+    background-image: url('./img/projeto1.jpg');
+    background-size: cover;
+    background-position: center center;
+    background-attachment: fixed;
+    
 }
 
 
@@ -51,6 +58,7 @@ h1 {
     box-shadow: 0 1rem 3rem rgba(0, 0, 0, 0.2);
     margin-top: 4rem;
     margin-bottom: 4rem;
+    
 }
 
 p {
